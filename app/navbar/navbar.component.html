@@ -1,0 +1,77 @@
+<header>
+  <nav class="navbar">
+    <div class="logo" style="height: 40px; padding: 10px 0 10px 0">
+      DEMO APP
+    </div>
+    <button class="burger" (click)="toggleNavbar()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+    <ul class="nav-links" [class.active]="!showSmallMenu">
+      <li><a routerLink="/home" routerLinkActive="active">HOME</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">ABOUT US</a></li>
+      <li><a routerLink="/JOB" routerLinkActive="active">JOBS</a></li>
+      <li><a routerLink="/CLIENT" routerLinkActive="active">CLIENT</a></li>
+      <li>
+        <a
+          routerLink="/EMPLOYERS"
+          routerLinkActive="active"
+          (click)="userProfilePage()"
+          >EMPLOYERS</a
+        >
+      </li>
+      <li><a routerLink="/CONTACT" routerLinkActive="active">CONTACT US</a></li>
+    </ul>
+    <ul class="small-menu" *ngIf="showSmallMenu">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/JOBS">JOBS</a></li>
+      <li><a routerLink="/CLIENT">CLIENT</a></li>
+      <li><a routerLink="/EMPLOYERS">EMPLOYERS</a></li>
+      <li><a routerLink="/CONTACT">CONTACT US</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h2>Demo test</h2></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="btn" (click)="userProfilePage()">
+            UserProfile
+          </button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Employers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->

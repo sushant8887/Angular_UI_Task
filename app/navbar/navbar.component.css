@@ -1,0 +1,101 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    color: black;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    /* Add margin to separate the logo from the links */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    /* Display links horizontally */
+    list-style-type: none;
+    padding-right: 55px;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+}
+
+.nav-links li a {
+    color: rgb(239, 233, 233);
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: overline aqua;
+    /* Underline on hover */
+    /* Change color on hover */
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(18, 1, 1);
+    margin: 3px;
+}
+
+.small-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+}
+
+.small-menu li {
+    padding: 0.5rem 0;
+}
+
+.small-menu li a {
+    color: rgb(239, 236, 236);
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+        /* Align items to the start */
+        height: 80px;
+
+    }
+
+    .logo {
+      
+        margin-right: auto;
+        /* Push the logo to the right */
+
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .small-menu {
+        display: flex;
+    }
+}

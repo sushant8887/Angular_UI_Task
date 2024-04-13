@@ -1,0 +1,679 @@
+/* Style for the hero section */
+.hero {
+    position: relative;
+    margin: 30px 70px 0 70px;
+}
+
+.hero img {
+    width: 100%;
+    height: 550px;
+}
+
+/* Style for the navbar */
+app-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* Ensure the navbar stays above the hero image */
+}
+
+.disply {
+    color: white;
+
+}
+
+.search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.name1 {
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-style: italic;
+    margin-right: 30px;
+    font-weight: lighter;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 45%;
+
+    left: 43%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    color: rgb(236, 232, 232);
+}
+
+.image-overlay select {
+    margin-left: 210px;
+    border: none;
+    height: 30px;
+    width: 220px;
+
+}
+
+.search {
+    position: absolute;
+    top: 38%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    color: rgb(236, 232, 232);
+}
+
+.search input {
+    width: 750px;
+    height: 35px;
+    background-color: white;
+    border: none;
+}
+
+.searchbtn{
+   margin-left: 40px;
+    align-items: center;
+    appearance: none;
+    background-color: #3aa5dc;
+    border-radius: 0;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #046ec9 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 42px;
+    width: 100px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    position: absolute;
+        top: 35%;
+        left: 72%;
+}
+
+
+
+.button-name {
+    align-items: center;
+    appearance: none;
+    background-color: #3aa5dc;
+    border-radius: 0;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #046ec9 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 42px;
+    width: 100px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    top: 53%;
+    left: 48%;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-name:focus {
+    box-shadow: #3aa5dc 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+
+.button-name:active {
+    box-shadow: #3aa5dc 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.container {
+    margin-top: 20px;
+    /* Add margin to separate from hero section */
+}
+
+.footer {
+    margin-top: 20px;
+    /* Add margin to separate from container */
+    background-color: #f2f2f2;
+    /* Light gray background */
+    padding: 20px;
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.child1{
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.text4{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.child3{
+    margin-top: 30px;
+    align-self: center;
+    width: 700px;
+    
+}
+
+
+
+/* Container div */
+.div-container {
+    background-color: #2C3E50;
+    /* Dark blue background color */
+    border: 5px dashed #249fe6;
+    border-left: 0;
+    border-right: 0;
+    /* Light turquoise border */
+    padding: 20px;
+    /* Padding inside the div */
+    margin: 50px 70px 0 70px;
+    /* Center the div */
+    height: 400px;
+}
+
+/* Text styling */
+.div-container h2 {
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center the text */
+    padding-top: 180px;
+}
+
+/* Input field styling */
+.div-container .input-field {
+    width: 200px;
+    /* Full width of the div */
+    padding: 10px;
+    /* Padding inside input field for better appearance */
+    margin-top: 10px;
+    margin-left: 500px;
+    /* Space above the input field */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Inner shadow for depth */
+}
+
+/* Button styling (if there is a button) */
+.div-container .button {
+    background-color: #18BC9C;
+    /* Light turquoise background color matching with border */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-top: 10px;
+    /* Space above the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.div-container .button:hover {
+    background-color: #16a085;
+    /* Slightly darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .containerHome {
+    margin-left: 23%;
+    margin-top: 250px;
+    
+}
+
+.modelForm {
+    margin-left: 23%;
+}
+
+.btnS {
+    margin-top: 30px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+} */
+
+/* ImgInput */
+
+/* .image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #5858586d;
+    border-radius: 50%;
+}
+
+.select-profile-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.matInput {
+    width: 100%;
+    padding: 8px 8px 15px 8px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.selectForm {
+    padding: 8px 8px 10px 8px;
+    border-radius: 10px;
+}
+
+.inputAddress {
+    width: 100%;
+    padding: 8px 8px 15px 8px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.message,
+.signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+mat-slider {
+    width: 300px;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: 0.3s ease;
+}
+
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+} */
+
+/* Country state imput */
+
+/* select { */
+    /* appearance: none;
+    padding: 8px 30px 8px 10px; */
+    /* Adjust padding as needed */
+    /* font-size: 16px; */
+    /* Adjust font size as needed */
+    /* border: 1px solid #ccc; */
+    /* Adjust border color as needed */
+    /* border-radius: 4px; */
+    /* Adjust border radius as needed */
+    /* background-color: #fff; */
+    /* Adjust background color as needed */
+    /* cursor: pointer; */
+/* } */
+
+/* select:focus {
+    outline: none;
+    border-color: #333;
+    
+} */
+/* Adjust focus border color as needed */
+
+/* .select-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent; */
+    /* Adjust arrow size as needed */
+    /* border-right: 6px solid transparent; */
+    /* Adjust arrow size as needed */
+    /* border-top: 6px solid #333; */
+    /* Adjust arrow color as needed */
+/* } */
+
+/* Optional: Style the dropdown items */
+/* select option {
+    padding: 8px 10px; */
+    /* Adjust padding as needed */
+    /* font-size: 16px; */
+    /* Adjust font size as needed */
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
